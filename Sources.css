@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Assets/Slavery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding-top: 20px;
+    padding-left: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.navigationitems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationitems li {
+    margin-bottom: 20px;
+}
+
+.navigationitems a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navigationitems a:hover {
+    background-color: #ff9800; 
+    color: black;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+}
+
+.profile-picture img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid white; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+.sources-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: 100vw; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.sources-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    animation: fadeIn 0.5s ease-out;
+}
+
+.sources-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sources-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sources-box ul li {
+    margin: 10px 0; 
+}
+
+.sources-box ul li a {
+    color: #007BFF; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+    font-size: 18px;
+}
+
+.sources-box ul li a:hover {
+    color: #0056b3; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Assets/Slavery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding-top: 20px;
+    padding-left: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.navigationitems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationitems li {
+    margin-bottom: 20px;
+}
+
+.navigationitems a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navigationitems a:hover {
+    background-color: #ff9800; 
+    color: black;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+}
+
+.profile-picture img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid white; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional semi-transparent background */
+}
+
+iframe {
+    border: 2px solid white; /* Optional border for visual separation */
+    border-radius: 10px; /* Optional rounded corners */
+}
